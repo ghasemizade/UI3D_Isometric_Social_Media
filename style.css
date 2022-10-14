@@ -23,10 +23,10 @@ ul li{
     background-color: #3e3f46;
     padding: 15px;
     transition: .5s;
+    z-index: calc(1 * var(--i));
 }
 ul li:hover{
     transform: translateX(-50px);
-
 }
 #facebook:hover{
     background-color: #1877f2;
@@ -57,7 +57,32 @@ ul li::before{
     filter: brightness(.7);
     transform-origin: right;
     transform: skewY(45deg);
+    transition: .5s;
 }
 a{
     text-decoration: none;
+}
+#facebook:hover::before{
+    background-color: #1877f2;
+    filter: brightness(.7);
+}
+#watsapp:hover::before{
+    background-color: #25d366;
+    filter: brightness(.7);
+}
+#snapchat:hover::before{
+    background-color: #fffb00;
+    filter: brightness(.7);
+}
+#tiktok:hover::before{
+    background-color: #69c9d0;
+    filter: brightness(.7);
+}
+#twitter:hover::before{
+    background-color: #0a66c2;
+    filter: brightness(.7);
+}
+#youtube:hover::before{
+    background-color: #ff0000;
+    filter: brightness(.7);
 }
