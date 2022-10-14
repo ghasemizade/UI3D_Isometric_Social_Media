@@ -61,12 +61,12 @@ ul li::before{
 }
 ul li a{
     text-decoration: none;
-    color: #999;
+    color: #aaa;
     display: block;
     text-transform: uppercase;
     letter-spacing: 0.0;
     letter-spacing: .5px;
-    transition: .5s;
+    transition: .2s;
 }
 #facebook:hover::before{
     background-color: #1877f2;
@@ -127,4 +127,29 @@ ul li::after{
 #youtube:hover::after{
     background-color: #ff0000;
     filter: brightness(.9);
+}
+ul li a:hover{
+    color: #fff;
+}
+ul li:last-child::after{
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, .25);
+}
+ul li span{
+    content: '';
+    position: absolute;
+    top: 0;
+    font-size: 28px;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+}
+ul li:hover span{
+    opacity: 1;
 }
