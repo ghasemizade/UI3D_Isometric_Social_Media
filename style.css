@@ -12,3 +12,52 @@ body{
     min-height: 100vh;
     background-color: #434750;
 }
+ul{
+    position: relative;
+    transform: skewY(-15deg);
+}
+ul li{
+    position: relative;
+    list-style: none;
+    width: 120px;
+    background-color: #3e3f46;
+    padding: 15px;
+    transition: .5s;
+}
+ul li:hover{
+    transform: translateX(-50px);
+
+}
+#facebook:hover{
+    background-color: #1877f2;
+}
+#watsapp:hover{
+    background-color: #25d366;
+}
+#snapchat:hover{
+    background-color: #fffb00;
+}
+#tiktok:hover{
+    background-color: #69c9d0;
+}
+#twitter:hover{
+    background-color: #0a66c2;
+}
+#youtube:hover{
+    background-color: #ff0000;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background-color: #3e3f46;
+    filter: brightness(.7);
+    transform-origin: right;
+    transform: skewY(45deg);
+}
+a{
+    text-decoration: none;
+}
